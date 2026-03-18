@@ -1,10 +1,9 @@
-import "./App.css";
-
 function App() {
   return (
     <>
-      <h1>Hello All is Ok</h1>
-      <button className="btn">Default</button>
+      <h1>Navbar</h1>
+
+      <h1>Footer</h1>
     </>
   );
 }

@@ -1,7 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui" {
   themes:
     light --default,
-    dark --prefersdark,
-    cupcake;
+    dark --prefersdark;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .gradient-btn {
+    @apply bg-gradient-to-r from-violet-700 to-purple-500 text-white;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-700 to-purple-500 bg-clip-text text-transparent;
+  }
 }
