@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { Link, Navigate, NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const links = (
@@ -36,13 +36,12 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
@@ -52,7 +51,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link className="font-bold text-lg" to="/">
+          <Link className="font-bold text-lg skeleton px-4 py-2" to="/">
             APP<span className="gradient-text">ZONE</span>
           </Link>
         </div>
@@ -70,7 +69,6 @@ const Navbar = () => {
             <FaGithub />
             Contribute
           </a>
-          ;
         </div>
       </div>
     </div>
