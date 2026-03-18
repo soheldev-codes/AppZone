@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../Layouts/Root";
 import Home from "../Pages/Home";
+import NotFound from "../Components/Shared/NotFound";
+import Installation from "../Pages/Installation";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    errorElement: <h1>404 page</h1>,
     children: [
       {
         index: true,
@@ -17,8 +18,16 @@ export const router = createBrowserRouter([
         element: <h1> apps</h1>,
       },
       {
+        path: "apps/details/:id",
+        element: <h1> app Details</h1>,
+      },
+      {
         path: "installation",
-        element: <h1>installation</h1>,
+        Component: Installation,
+      },
+      {
+        path: "*",
+        Component: NotFound,
       },
     ],
   },
