@@ -24,7 +24,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className=" bg-base-100 shadow-sm">
+    <div className=" bg-base-100 shadow-sm sticky top-0 ">
       <div className="container mx-auto navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -65,7 +65,7 @@ const Navbar = () => {
           <a
             href="https://github.com/soheldev-codes/AppZone"
             target="_blank"
-            className="gradient-btn px-4 py-3 rounded font-semibold flex items-center gap-2"
+            className="gradient-btn px-4 py-3 rounded font-semibold flex items-center gap-2 hover:opacity-90 transition-all"
           >
             <FaGithub />
             Contribute
