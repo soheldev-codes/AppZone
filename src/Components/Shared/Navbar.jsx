@@ -52,7 +52,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link className="  font-bold text-lg" to="/dashboard">
+          <Link className="font-bold text-lg" to="/">
             APP<span className="gradient-text">ZONE</span>
           </Link>
         </div>
