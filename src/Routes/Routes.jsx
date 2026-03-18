@@ -3,6 +3,7 @@ import Root from "../Layouts/Root";
 import Home from "../Pages/Home";
 import NotFound from "../Components/Shared/NotFound";
 import Installation from "../Pages/Installation";
+import AppDetails from "../Pages/AppDetails";
 
 export const router = createBrowserRouter([
   {
@@ -15,11 +16,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "apps",
-        element: <h1> apps</h1>,
+        element: <h1> app Details</h1>,
       },
       {
         path: "apps/details/:id",
-        element: <h1> app Details</h1>,
+        Component: AppDetails,
       },
       {
         path: "installation",
