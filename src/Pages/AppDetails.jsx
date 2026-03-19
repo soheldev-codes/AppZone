@@ -1,29 +1,33 @@
 import { FaStar } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
-import { useParams } from "react-router";
+import { useLoaderData, useParams } from "react-router";
 
-const app = {
-  id: 12,
-  image: "https://i.ibb.co/app12.png",
-  title: "TaskHero",
-  companyName: "HeroTech",
-  description: "Complete tasks like a hero with productivity tools.",
-  size: 150,
-  reviews: 11000,
-  ratingAvg: 4.3,
-  downloads: 1700000,
-  ratings: [
-    { name: "1 star", count: 300 },
-    { name: "2 star", count: 600 },
-    { name: "3 star", count: 1400 },
-    { name: "4 star", count: 3500 },
-    { name: "5 star", count: 5200 },
-  ],
-};
+// const app = {
+//   id: 12,
+//   image: "https://i.ibb.co/app12.png",
+//   title: "TaskHero",
+//   companyName: "HeroTech",
+//   description: "Complete tasks like a hero with productivity tools.",
+//   size: 150,
+//   reviews: 11000,
+//   ratingAvg: 4.3,
+//   downloads: 1700000,
+//   ratings: [
+//     { name: "1 star", count: 300 },
+//     { name: "2 star", count: 600 },
+//     { name: "3 star", count: 1400 },
+//     { name: "4 star", count: 3500 },
+//     { name: "5 star", count: 5200 },
+//   ],
+// };
 
 export default function AppDetails() {
-  const id = useParams();
-  console.log(id);
+  const appsData = useLoaderData();
+  const { id } = useParams();
+
+  const app = appsData.find((item) => item.id === parseInt(id));
+
+  appsData.find((app) => app.id === Number(id));
 
   if (!app) return <p>No App Found</p>;
 

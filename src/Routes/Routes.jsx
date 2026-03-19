@@ -28,6 +28,11 @@ export const router = createBrowserRouter([
       {
         path: "/apps/details/:id",
         Component: AppDetails,
+        loader: async () => {
+          const res = await fetch("/appfakedata.json");
+          return res.json();
+        },
+        HydrateFallback: () => <FallBackLoader />,
       },
       {
         path: "installation",
