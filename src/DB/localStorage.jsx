@@ -16,6 +16,6 @@ export const saveAppDB = (id) => {
 
 export const removeApp = (id) => {
   const apps = getInstalledApps();
-  const updated = apps.filter((app) => app.id !== id);
+  const updated = apps.filter((appID) => appID !== id);
   localStorage.setItem(KEY, JSON.stringify(updated));
 };
