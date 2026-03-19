@@ -53,7 +53,7 @@ export default function Installation() {
 
         <select
           onChange={(e) => handleSort(e.target.value)}
-          className="border px-3 py-2 rounded text-sm"
+          className="border px-3 py-2 rounded text-sm cursor-pointer border-gray-200"
         >
           <option value="">Sort By</option>
           <option value="low">Low To High</option>
@@ -101,7 +101,7 @@ export default function Installation() {
             {/* Right */}
             <button
               onClick={() => handleUninstall(app.id)}
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded cursor-pointer"
             >
               Uninstall
             </button>

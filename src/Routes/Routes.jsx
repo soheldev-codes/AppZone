@@ -15,6 +15,11 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        loader: async () => {
+          const res = await fetch("/appfakedata.json");
+          return res.json();
+        },
+        HydrateFallback: () => <FallBackLoader />,
       },
       {
         path: "apps",

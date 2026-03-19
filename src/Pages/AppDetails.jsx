@@ -3,6 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import { useLoaderData, useParams } from "react-router";
 import { getInstalledApps, saveAppDB } from "../DB/localStorage";
+import toast from "react-hot-toast";
 
 export default function AppDetails() {
   const appsData = useLoaderData();
@@ -18,6 +19,7 @@ export default function AppDetails() {
   const handleInstall = () => {
     saveAppDB(app.id);
     setInstalled(true);
+    toast.success("App Installed Successfully");
   };
 
   if (!app) return <p>No App Found</p>;

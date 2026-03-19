@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../Components/AppCard/AppCard";
+import AppNotFound from "../Components/Shared/AppNotFound";
 
 const AllApps = () => {
   const appsData = useLoaderData();
@@ -11,6 +12,9 @@ const AllApps = () => {
     app.title.toLowerCase().includes(search.toLowerCase()),
   );
 
+  if (filteredApps.length === 0) {
+    return <AppNotFound />;
+  }
   return (
     <div className="bg-gray-100 min-h-screen p-6">
       <div className=" container mx-auto">
