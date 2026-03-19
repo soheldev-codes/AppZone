@@ -7,17 +7,35 @@ const Navbar = () => {
     <>
       <NavLink to="/">
         {({ isActive }) => (
-          <span className={isActive ? "gradient-text" : ""}>Home</span>
+          <span
+            className={
+              isActive ? "gradient-text pb-1  border-b-2 border-purple-600" : ""
+            }
+          >
+            Home
+          </span>
         )}
       </NavLink>
       <NavLink to="/apps">
         {({ isActive }) => (
-          <span className={isActive ? "gradient-text" : ""}>Apps</span>
+          <span
+            className={
+              isActive ? "gradient-text pb-1 border-b-2 border-purple-600" : ""
+            }
+          >
+            Apps
+          </span>
         )}
       </NavLink>
       <NavLink to="/installation">
         {({ isActive }) => (
-          <span className={isActive ? "gradient-text" : ""}>Installation</span>
+          <span
+            className={
+              isActive ? "gradient-text pb-1 border-b-2 border-purple-600" : ""
+            }
+          >
+            Installation
+          </span>
         )}
       </NavLink>
     </>

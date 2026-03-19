@@ -30,7 +30,6 @@ export default function Installation() {
   //  uninstall UI + localStorage sync
   const handleUninstall = (id) => {
     const updated = installedIds.filter((appId) => appId !== id);
-    console.log(updated);
     setInstalledIds(updated);
     removeApp(id);
 

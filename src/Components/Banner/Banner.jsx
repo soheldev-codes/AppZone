@@ -19,12 +19,19 @@ const Banner = () => {
               your apps, all in one place — AppZone.”
             </p>
             <div className="flex justify-center gap-4 mb-10">
-              <button className="btn">
-                <FaGooglePlay className="text-2xl" /> Google Play
-              </button>
-              <button className="btn">
-                <IoLogoAppleAppstore className="text-2xl" /> App Store
-              </button>
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps?hl=en"
+              >
+                <button className="btn">
+                  <FaGooglePlay className="text-2xl" /> Google Play
+                </button>
+              </a>
+              <a target="_blank" href="https://www.apple.com/app-store/">
+                <button className="btn">
+                  <IoLogoAppleAppstore className="text-2xl" /> App Store
+                </button>
+              </a>
             </div>
           </div>
           <div>
