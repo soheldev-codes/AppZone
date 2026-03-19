@@ -5,6 +5,7 @@ import NotFound from "../Components/Shared/NotFound";
 import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
 import AllApps from "../Pages/AllApps";
+import FallBackLoader from "../Components/Shared/FallBackLoader";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
           const res = await fetch("/appfakedata.json");
           return res.json();
         },
+        HydrateFallback: () => <FallBackLoader />,
       },
       {
         path: "/apps/details/:id",
