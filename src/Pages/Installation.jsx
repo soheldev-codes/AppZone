@@ -35,12 +35,9 @@ const initialApps = [
 
 export default function Installation() {
   const [apps, setApps] = useState(initialApps);
-  const [sortType, setSortType] = useState("");
 
   // 🔹 Sort Function
   const handleSort = (type) => {
-    setSortType(type);
-
     let sorted = [...apps];
 
     if (type === "size") {

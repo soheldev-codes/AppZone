@@ -1,25 +1,8 @@
+import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import { useLoaderData, useParams } from "react-router";
-
-// const app = {
-//   id: 12,
-//   image: "https://i.ibb.co/app12.png",
-//   title: "TaskHero",
-//   companyName: "HeroTech",
-//   description: "Complete tasks like a hero with productivity tools.",
-//   size: 150,
-//   reviews: 11000,
-//   ratingAvg: 4.3,
-//   downloads: 1700000,
-//   ratings: [
-//     { name: "1 star", count: 300 },
-//     { name: "2 star", count: 600 },
-//     { name: "3 star", count: 1400 },
-//     { name: "4 star", count: 3500 },
-//     { name: "5 star", count: 5200 },
-//   ],
-// };
+import { getInstalledApps, saveAppDB } from "../DB/localStorage";
 
 export default function AppDetails() {
   const appsData = useLoaderData();
@@ -27,7 +10,15 @@ export default function AppDetails() {
 
   const app = appsData.find((item) => item.id === parseInt(id));
 
-  appsData.find((app) => app.id === Number(id));
+  const [installed, setInstalled] = useState(() => {
+    const apps = getInstalledApps();
+    return apps.some((a) => a == id);
+  });
+
+  const handleInstall = () => {
+    saveAppDB(app.id);
+    setInstalled(true);
+  };
 
   if (!app) return <p>No App Found</p>;
 
@@ -79,8 +70,18 @@ export default function AppDetails() {
           </div>
 
           {/* Install Button */}
-          <button className="mt-4 bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded">
+          {/* <button className="mt-4 bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded">
             Install Now ({app.size} MB)
+          </button> */}
+
+          <button
+            onClick={handleInstall}
+            disabled={installed}
+            className={`mt-4 px-5 py-2 rounded cursor-pointer text-white ${
+              installed ? "bg-gray-400" : "bg-green-500"
+            }`}
+          >
+            {installed ? "Installed" : `Install (${app.size} MB)`}
           </button>
         </div>
       </div>
