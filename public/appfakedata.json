@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921222.png",
+    "title": "SmPlan: ToDo List With Reminder",
+    "companyName": "productive.io",
+    "description": "A productivity app based on Pomodoro technique with task tracking and reminders.",
+    "size": 291,
+    "reviews": 54000,
+    "ratingAvg": 4.9,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2800 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn-icons-png.flaticon.com/512/3062/3062634.png",
+    "title": "Focus Keeper",
+    "companyName": "Focus Labs",
+    "description": "Stay focused with smart timers and productivity analytics.",
+    "size": 120,
+    "reviews": 21000,
+    "ratingAvg": 4.5,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
+    "title": "TaskFlow Manager",
+    "companyName": "FlowTech",
+    "description": "Manage daily tasks efficiently with drag-and-drop features.",
+    "size": 200,
+    "reviews": 18000,
+    "ratingAvg": 4.3,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn-icons-png.flaticon.com/512/2991/2991148.png",
+    "title": "NoteMaster Pro",
+    "companyName": "NoteSoft",
+    "description": "Advanced note-taking app with cloud sync and collaboration.",
+    "size": 180,
+    "reviews": 32000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 12000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "title": "Habit Tracker Plus",
+    "companyName": "HabitLab",
+    "description": "Track habits and build consistency with streak tracking.",
+    "size": 95,
+    "reviews": 15000,
+    "ratingAvg": 4.4,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn-icons-png.flaticon.com/512/190/190411.png",
+    "title": "ZenFocus",
+    "companyName": "ZenTech",
+    "description": "Distraction-free focus environment with ambient sounds.",
+    "size": 140,
+    "reviews": 9000,
+    "ratingAvg": 4.2,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-icons-png.flaticon.com/512/833/833472.png",
+    "title": "Daily Planner X",
+    "companyName": "Planify",
+    "description": "Plan your day with smart suggestions and reminders.",
+    "size": 160,
+    "reviews": 12000,
+    "ratingAvg": 4.3,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn-icons-png.flaticon.com/512/1827/1827392.png",
+    "title": "Reminder Pro",
+    "companyName": "Alertify",
+    "description": "Never miss tasks with smart alerts and reminders.",
+    "size": 110,
+    "reviews": 10000,
+    "ratingAvg": 4.1,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn-icons-png.flaticon.com/512/2920/2920349.png",
+    "title": "Time Tracker Go",
+    "companyName": "Trackify",
+    "description": "Track time spent on tasks and improve productivity.",
+    "size": 130,
+    "reviews": 8000,
+    "ratingAvg": 4.0,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 3200 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
+    "title": "MindFocus AI",
+    "companyName": "AI Labs",
+    "description": "AI-powered assistant to boost productivity and focus.",
+    "size": 220,
+    "reviews": 25000,
+    "ratingAvg": 4.6,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921822.png",
+    "title": "WorkZen",
+    "companyName": "ZenWorks",
+    "description": "Focus sessions with relaxing sounds and timers.",
+    "size": 175,
+    "reviews": 7000,
+    "ratingAvg": 4.2,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn-icons-png.flaticon.com/512/3135/3135679.png",
+    "title": "TaskHero",
+    "companyName": "HeroTech",
+    "description": "Complete tasks efficiently with powerful productivity tools.",
+    "size": 150,
+    "reviews": 11000,
+    "ratingAvg": 4.3,
+    "downloads": 1700000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 5200 }
+    ]
+  }
+]

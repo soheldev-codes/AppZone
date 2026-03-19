@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
+import { useParams } from "react-router";
 
 const app = {
   id: 12,
@@ -21,6 +22,9 @@ const app = {
 };
 
 export default function AppDetails() {
+  const id = useParams();
+  console.log(id);
+
   if (!app) return <p>No App Found</p>;
 
   const maxRating = Math.max(...app.ratings.map((r) => r.count));

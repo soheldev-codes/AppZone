@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import NotFound from "../Components/Shared/NotFound";
 import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
+import AllApps from "../Pages/AllApps";
 
 export const router = createBrowserRouter([
   {
@@ -16,10 +17,14 @@ export const router = createBrowserRouter([
       },
       {
         path: "apps",
-        element: <h1> app Details</h1>,
+        Component: AllApps,
+        loader: async () => {
+          const res = await fetch("/appfakedata.json");
+          return res.json();
+        },
       },
       {
-        path: "apps/details/:id",
+        path: "/apps/details/:id",
         Component: AppDetails,
       },
       {
